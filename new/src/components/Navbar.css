@@ -1,0 +1,33 @@
+/* src/components/Navbar.css */
+.navbar {
+  background-color: rgba(128, 128, 128, 0.5); /* Translucent grey background */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px; /* Wider padding */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+button.active {
+  background-color: #555;
+  border-radius: 5px;
+}

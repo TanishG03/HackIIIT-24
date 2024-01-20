@@ -1,0 +1,137 @@
+/* Comprehensive App.css with Pastel Theme and Accessibility */
+
+/* Base Styles */
+body {
+  background-color: #f3f4f6; /* Soft pastel background */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333; /* Contrast for readability */
+}
+
+.App {
+  text-align: center;
+}
+
+.content {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff; /* Bright background for content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #bde0fe; /* Pastel blue */
+  color: #ffffff; /* Dark text for contrast */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: #1d3557;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.navbar-menu button:hover, button.active {
+  background-color: #a2d2ff; /* Lighter pastel blue for hover */
+  border-radius: 5px;
+  border-color: #1d3557;
+}
+
+/* Landing Page Styles */
+.landing-page, .rent-bike, .rent-out-bike, .login-page, .signup-page, .dashboard {
+  text-align: center;
+  padding: 40px;
+  background-color: #ffffff; /* Pastel pink */
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.landing-page h1, .rent-bike h1, .rent-out-bike h1, .login-page h1, .signup-page h1, .dashboard h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #1d3557; /* Dark blue for contrast */
+}
+
+.landing-page p, .rent-bike p, .rent-out-bike p, .login-page p, .signup-page p, .dashboard p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #333; /* Dark text for readability */
+}
+
+/* Form Styles */
+.form input[type="text"], .form input[type="password"], .form input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form button {
+  background-color: #bde0fe; /* Pastel blue */
+  color: #1d3557;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #a2d2ff;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.table th, .table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.table th {
+  background-color: #bde0fe; /* Pastel blue header */
+  color: #1d3557; /* Dark text for contrast */
+}
+
+/* Additional Styling for Consistency */
+button, .choice-buttons button {
+  background-color: #bde0fe; /* Pastel blue */
+  color: #1d3557; /* Dark text */
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #a2d2ff; /* Lighter blue on hover */
+}
