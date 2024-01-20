@@ -1,9 +1,10 @@
 // Header.js
 import React from 'react';
+import '../fonts.css';
 
 const Header = () => {
   return (
-    <header>
+    <header >
       <nav>
         <ul>
           <li>Home</li>

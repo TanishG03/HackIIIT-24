@@ -5,7 +5,7 @@ import './Navbar.css'; // Import CSS for Navbar styles
 const Navbar = ({ currentPage, navigateTo }) => {
   return (
     <nav className="navbar">
-      <div className="navbar-brand">Bike Rental</div>
+      <div className="navbar-brand">Bike@I</div>
       <div className="navbar-menu">
         <button
           className={currentPage === 'landing' ? 'active' : ''}

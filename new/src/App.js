@@ -7,7 +7,11 @@ import RentBike from './components/RentBike';
 import RentOutBike from './components/RentOutBike';
 import LoginPage from './components/LoginPage';
 import SignupPage from './components/SignupPage';
+import './fonts.css'; // Import the custom font CSS
 import Dashboard from './components/Dashboard';
+
+
+
 
 function App() {
   const [currentPage, setCurrentPage] = useState('landing');
@@ -17,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" >
       <Navbar currentPage={currentPage} navigateTo={navigateTo} /> {/* Include the updated Navbar component */}
       <div className="content">
         {/* Render the content based on the current page */}

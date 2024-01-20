@@ -1,5 +1,4 @@
 /* LandingPage.css */
-
 /* Base Styles */
 body {
   background-color: #f3f4f6; /* Soft pastel background */
@@ -9,58 +8,123 @@ body {
   color: #333; /* Contrast for readability */
 }
 
+.typing-animation {
+  overflow: hidden; /* Hide overflow to create typing effect */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: typing 0.75s steps(30, end) 1s forwards, blink-caret 0.75s infinite;
+  text-align: left;
+}
+.typing-animation1 {
+  overflow: hidden; /* Hide overflow to create typing effect */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: typing 0.75s steps(30, end) 1s forwards, blink-caret 0.75s infinite;
+  text-align: left;
+  color: black;
+}
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-20px); /* Initial position off-screen to the left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Final position, no translation */
+  }
+}
+
+/* Styling for the typing animation */
+.typing-animation2 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  color:black;
+  font-weight: bolder;
+  animation: fade-in-left 1s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-right-color: transparent; }
+  50% { border-right-color: white; }
+}
+
+
+
 .App {
   text-align: center;
 }
 
 .content {
-  margin: 20px;
-  padding: 20px;
+
   background-color: #ffffff; /* Bright background for content */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
 }
 
+.flex-container0 {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  background-image: url(./travel.gif);
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.flex-container1:hover .box-content0  {
+  transform: translate(-50%, -50%) scale(1.3); /* Adjust the scaling factor as needed */}
+
+.flex-container1 {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  background-size: cover;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+/* Dark overlay */
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
+  backdrop-filter: blur(2px); /* Adjust the blur value as needed */
+}
+
+/* Content inside the box */
+.box-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Text color */
+  text-align: center;
+  font-size: 100px;
+
+  
+}
 /* Navbar Styles */
-.navbar {
-  background-color: #bde0fe; /* Pastel blue */
-  color: #1d3557; /* Dark text for contrast */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-}
+.box-content0 {
+  position: absolute;
 
-.navbar-brand {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.navbar-menu {
-  display: flex;
-  gap: 20px;
-}
-
-.navbar-menu button {
-  background-color: transparent;
-  border: 2px solid transparent;
-  color: #1d3557;
-  cursor: pointer;
-  font-size: 1.1rem;
-  padding: 10px 20px;
-  transition: background-color 0.3s, border-color 0.3s;
-}
-
-.navbar-menu button:hover, button.active {
-  background-color: #a2d2ff; /* Lighter pastel blue for hover */
-  border-radius: 5px;
-  border-color: #1d3557;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Text color */
+  text-align: center;
+  font-size: 100px;
+  transition: transform 0.3s ease; /* Add a smooth transition for the scaling effect */
+  
 }
 
 /* Landing Page Styles */
 .landing-page {
   text-align: center;
-  padding: 40px;
   background-color: #f8f9fa;
   min-height: 100vh;
   display: flex;
@@ -78,7 +142,7 @@ body {
 .flex-container {
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 .flex-item {
@@ -92,11 +156,11 @@ body {
 }
 
 .flex-item:first-child {
-  background: url('background1.jpeg') center/cover no-repeat;
+  background: url('./Annie\ Londonderry_on\ bicycle.gif') center/cover no-repeat;
 }
 
 .flex-item:last-child {
-  background: url('background2.jpeg') center/cover no-repeat;
+  background: url('./Used-Car-Selling-and-Buying-Apps-gif-1.gif') center/cover no-repeat;
 }
 
 .flex-item:hover {
