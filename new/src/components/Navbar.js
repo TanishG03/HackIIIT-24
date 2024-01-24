@@ -1,8 +1,11 @@
 // src/components/Navbar.js
 import React from 'react';
-import './Navbar.css'; // Import CSS for Navbar styles
+import { useAuth } from './AuthContext'; // Import the useAuth hook
+import './Navbar.css';
 
 const Navbar = ({ currentPage, navigateTo }) => {
+  const { isLoggedIn } = useAuth(); // Use the useAuth hook to access isLoggedIn
+
   return (
     <nav className="navbar">
       <div className="navbar-brand">Bike@I</div>
@@ -25,24 +28,30 @@ const Navbar = ({ currentPage, navigateTo }) => {
         >
           Rent Out Your Bike
         </button>
-        <button
-          className={currentPage === 'login' ? 'active' : ''}
-          onClick={() => navigateTo('login')}
-        >
-          Login
-        </button>
-        <button
-          className={currentPage === 'signup' ? 'active' : ''}
-          onClick={() => navigateTo('signup')}
-        >
-          Sign Up
-        </button>
-        <button
-          className={currentPage === 'dashboard' ? 'active' : ''}
-          onClick={() => navigateTo('dashboard')}
-        >
-          Dashboard
-        </button>
+        {!isLoggedIn && (
+          <button
+            className={currentPage === 'login' ? 'active' : ''}
+            onClick={() => navigateTo('login')}
+          >
+            Login
+          </button>
+        )}
+        {!isLoggedIn && (
+          <button
+            className={currentPage === 'signup' ? 'active' : ''}
+            onClick={() => navigateTo('signup')}
+          >
+            Sign Up
+          </button>
+        )}
+        {isLoggedIn && (
+          <button
+            className={currentPage === 'dashboard' ? 'active' : ''}
+            onClick={() => navigateTo('dashboard')}
+          >
+            Dashboard
+          </button>
+        )}
       </div>
     </nav>
   );

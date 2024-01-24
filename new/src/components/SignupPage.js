@@ -1,18 +1,28 @@
 // src/components/SignupPage.js
 import React, { useState } from 'react';
+import axios from 'axios';
+import { useAuth } from './AuthContext'; // Import the useAuth hook
+
 
 const SignupPage = ({ navigateTo }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const { setLoggedIn } = useAuth(); // Destructure setLoggedIn from the context
 
-  const handleSignup = () => {
-    // Implement your signup logic here
-    // For example, send signup request to a server
 
-    // Assuming signup is successful
-    navigateTo('dashboard'); // Redirect to the dashboard after successful signup
-  };
+const handleSignup = async (e) => {
+  e.preventDefault();
+  try {
+    const response = await axios.post('http://127.0.0.1:5000/signup', { email, password });
+    setLoggedIn(true);  
+    navigateTo('dashboard');
+  } catch (error) {
+    setError(error.response.data.message);
+  }
+};
+    
+
 
   return (
     <div className="signup-page">
@@ -39,6 +49,6 @@ const SignupPage = ({ navigateTo }) => {
       </p>
     </div>
   );
-};
+}
 
 export default SignupPage;

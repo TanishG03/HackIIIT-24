@@ -1,0 +1,412 @@
+/* LandingPage.css */
+/* Base Styles */
+
+.rent {
+  margin-top: 1%;
+  padding: bottom 3%; 
+}
+.button{
+  font-family: Circular;
+}
+.typing-animation {
+overflow: hidden; /* Hide overflow to create typing effect */
+white-space: nowrap; /* Prevent line breaks */
+animation: typing 0.75s steps(30, end) 1s forwards, blink-caret 0.75s infinite;
+text-align: left;
+}
+.typing-animation1_rent {
+text-align: left;
+color: black;
+animation: fade-in-left 1s ease-in-out; /* Adjust the duration and easing as needed */
+
+}
+@keyframes fade-in-left {
+from {
+  opacity: 0;
+  transform: translateX(-20px); /* Initial position off-screen to the left */
+}
+to {
+  opacity: 1;
+  transform: translateX(0); /* Final position, no translation */
+}
+}
+
+
+
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -10px; 
+  margin-top: 2%;/* To offset the margin applied to individual cards */
+  justify-content: left;
+  align-content: flex-start; /* Align content at the beginning (left) */
+  /* Additional styling for the card container if needed */
+}
+
+.card {
+  width: calc(30% - 20px); /* Default width for 3 cards in a row */
+  margin: 40px;
+  margin-left: 45px;
+  height: 760px;
+  border-radius: 20px;
+  border: 2px solid black;
+
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  /* Additional styling for individual cards */
+}
+.card:hover{
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+/* Adjust width for 2 cards in a row */
+@media (max-width: 767px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+ .rent_now{
+  background-color: #000000; /* LinkedIn blue color */
+  color: #fff;
+  margin-top: 15%;
+  width: 60%;
+  padding: 15px 70px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+/* Adjust width for 1 card in a row */
+@media (max-width: 479px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+}
+
+h3{
+  padding-left: 25px;
+  font-size: 50px;
+  font-weight: bold ;
+  text-align: left;
+}
+h4{
+  padding-left: 25px;
+  font-size: 30px;
+  font-weight: bold ;
+  color: #000000;
+  text-align: left;
+}
+
+.card-image {
+  height: 250px; /* Set the height of the background image section */
+  background-image: url('./Annie Londonderry_on bicycle.gif');
+  background-size: cover;
+  border-radius: 18px 18px 0 0;
+  /* Additional styling for the card image section */
+}
+
+.card-details {
+  padding: 10px;
+  height: 300px;
+  /* Additional styling for the card details section */
+}
+
+
+
+/* Styling for the typing animation */
+.typing-animation2 {
+display: inline-block;
+overflow: hidden;
+white-space: nowrap;
+color:black;
+font-weight: bolder;
+animation: fade-in-left 1s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+from { width: 0; }
+to { width: 100%; }
+}
+
+@keyframes blink-caret {
+from, to { border-right-color: transparent; }
+50% { border-right-color: white; }
+}
+
+
+
+.App {
+text-align: center;
+}
+
+.content {
+
+background-color: #ffffff; /* Bright background for content */
+}
+
+.flex-container0 {
+position: relative;
+width: 100%;
+min-height: 60vh;
+background-image: url(./travel.gif);
+background-size: cover;
+margin-bottom: 20px;
+}
+
+
+.flex-container1_rent {
+position: relative;
+width: 100%;
+min-height: 40vh;
+background-size:cover;
+/* background-image: url(./happiness-guide-still-jumbo.gif);  margin-bottom: 20px; */
+background-color: #ffad31;
+}
+.frm{
+  width: 40%;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.log{
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.dark-overlay_log {
+position: relative;
+top: -10%;
+left: -5%;
+width: 110%;
+height: 120%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 20px 20px 0 0 ;
+
+  
+}
+.submit_log{
+  
+  width: 70%;
+  margin: 20px auto;
+  margin-top: 70px;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #000000;
+  color: white;
+}
+.form-title_log{
+  text-align: center;
+  font-size: 1.5em;
+  margin-top:5%;
+  padding: 40px;
+  margin-bottom: 20px;
+  color: white;
+background-image: url(./happiness-guide-still-jumbo.gif);    height: 30vh;
+  border-radius: 20px 20px 0 0 ;
+
+}
+.box-content_log{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ font-size: 100px;
+  color: white; /* Text color */
+}
+.toRent {
+  display: flex;
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5%;
+
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center buttons horizontally */
+  padding-bottom:2% ;
+}
+
+button {
+  background-color: #000000; /* LinkedIn blue color */
+  color: #fff;
+  padding: 15px 70px;
+  border: none;
+  border-radius: 30px;
+  margin: 10px 0; /* Add margin between buttons */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005885; /* Darker shade on hover */
+}
+
+
+.form-half {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Set the flex-direction to column for the form-half */
+}
+.image-container{
+  width: 75%;
+  background-image: url(./Annie\ Londonderry_on\ bicycle.gif);
+}
+.rounded-image {
+  width: 75%; /* Set the width to cover 75% of the div */
+  border-radius: 12px; /* Set rounded corners */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  align-self: center; /* Center the image horizontally */
+}
+
+
+
+.label-group {
+  display: flex;
+  gap: 15px;
+}
+
+.label-group label {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  padding: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label input {
+  margin-right: 5px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Dark overlay */
+.dark-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
+backdrop-filter: blur(2px); /* Adjust the blur value as needed */
+}
+
+/* Content inside the box */
+.box-content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white; /* Text color */
+text-align: center;
+font-size: 100px;
+
+
+}
+/* Navbar Styles */
+.box-content0_rent {
+position: absolute;
+
+top: 5%;
+left: 1%;
+color: rgb(0, 0, 0); /* Text color */
+text-align: left;
+font-size: 100px;
+transition: transform 0.3s ease; /* Add a smooth transition for the scaling effect */
+
+}
+
+/* Landing Page Styles */
+.landing-page {
+text-align: center;
+background-color: #f8f9fa;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.landing-header h1 {
+font-size: 2.5rem;
+color: #1db954; /* Spotify's green */
+margin-bottom: 30px;
+}
+
+.flex-container {
+display: flex;
+width: 100%;
+min-height: 60vh;
+}
+
+.flex-item {
+flex: 1;
+transition: flex-grow 0.3s ease;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+overflow: hidden;
+}
+
+.flex-item:first-child {
+background: url('./Annie\ Londonderry_on\ bicycle.gif') center/cover no-repeat;
+}
+
+.flex-item:last-child {
+background: url('./Used-Car-Selling-and-Buying-Apps-gif-1.gif') center/cover no-repeat;
+}
+
+.flex-item:hover {
+flex-grow: 1.33;
+}
+
+.flex-item h2 {
+color: white;
+font-size: 2rem;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Additional Styling */
+/* Add any additional styles you need here */

@@ -1,0 +1,88 @@
+[
+    {
+        "id": 1,
+        "name": "Mountain Explorer",
+        "description": "A rugged mountain bike suitable for all terrains.",
+        "milesDriven": 120,
+        "hasFuel": false,
+        "user_email": "user1@example.com",
+        "isAvailable": true
+    },
+    {
+        "id": 2,
+        "name": "City Cruiser",
+        "description": "Perfect for urban environments, comfortable and stylish.",
+        "milesDriven": 60,
+        "hasFuel": false,
+        "user_email": "user2@example.com",
+        "isAvailable": false
+    },
+    {
+        "name": "sdfsadfs",
+        "description": "fsdfsdf",
+        "milesDriven": "23",
+        "hasFuel": true,
+        "user_email": "saket@fsd.comn",
+        "isAvailable": true,
+        "id": 3
+    },
+    {
+        "name": "sdfsadfs",
+        "description": "fsdfsdf",
+        "milesDriven": "23",
+        "hasFuel": true,
+        "user_email": "saket@fsd.comn",
+        "isAvailable": true,
+        "id": 4
+    },
+    {
+        "name": "sdfsadfs",
+        "description": "fsdfsdf",
+        "milesDriven": "23",
+        "hasFuel": true,
+        "user_email": "saket@fsd.comn",
+        "isAvailable": true,
+        "id": 5
+    },
+    {
+        "name": "car",
+        "description": "sldkfjlskdfj",
+        "milesDriven": "12",
+        "hasFuel": true,
+        "user_email": "sdfsdf",
+        "isAvailable": true,
+        "id": 6
+    },
+    {
+        "vehicleName": "abcd",
+        "vehicleDescription": "sad",
+        "milesDriven": "23",
+        "hasFuel": true,
+        "pictures": [],
+        "id": 7
+    },
+    {
+        "vehicleName": "Activa",
+        "vehicleDescription": "N/A",
+        "milesDriven": "25999",
+        "hasFuel": true,
+        "pictures": [],
+        "id": 8
+    },
+    {
+        "vehicleName": "Mountain Explorer",
+        "vehicleDescription": "N/A",
+        "milesDriven": "4599",
+        "hasFuel": true,
+        "pictures": [],
+        "id": 9
+    },
+    {
+        "vehicleName": "Activa",
+        "vehicleDescription": "3424",
+        "milesDriven": "12",
+        "hasFuel": true,
+        "pictures": [],
+        "id": 10
+    }
+]

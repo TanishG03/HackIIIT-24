@@ -1,0 +1,46 @@
+[
+    {
+        "email": "saket@gmail.com",
+        "password": "scrypt:32768:8:1$T0gCQHZG9GTFKjrK$d8df80825fea5038bbe4eb71676ddc33ca6f00bb98c1e7fafbd5143b008a5858bd714c31cd31258dec79dcbeea71697e032640de97e58b00050b4022ce1c22f2"
+    },
+    {
+        "email": "saket@atreya",
+        "password": "scrypt:32768:8:1$JbmLNV2iZVQxqNvu$f7397f1c3a589ffc5c08ec917cd3473f853312667cd8f025b2978a63dba449adb4f63c3f8c751c9e6288ff21ae1c8b6898e58ff2204ad5773f096c1632796498"
+    },
+    {
+        "email": "lmfao@g",
+        "password": "scrypt:32768:8:1$dFSdFRlHRByADnpo$2cd6043461941be8cf8059b4aca0f94f613df9ebd325aff5d1f2aca2242604eeb4256562ed3348e94bcc98fab76aec5892f2a72af4a1fc387dfa3fc250af2551"
+    },
+    {
+        "email": "saket.atreya@students.iiit.ac.in",
+        "password": "scrypt:32768:8:1$iSJYUR9LmJiMFgv2$06da1d9d9b3906d662ee05d6b591ef77a28f0813fd0ac8c6b69ae9dbfccac434f6da7a88264b1f8720f01bd1d47923b79185115286fd5a928099839fdd2e4820"
+    },
+    {
+        "email": "lmfao@gmail.com",
+        "password": "scrypt:32768:8:1$5iZFhpOBY02Jh6Um$e63f7586757f356ed80ec463b8d171fb39592ad32d5d9ca68a03ad7f70554ba0b906943d1d7df5b1658cbea46306e77a7a5f9c3592011d7ef08af0e1d1be6385"
+    },
+    {
+        "email": "retard@gg.com",
+        "password": "scrypt:32768:8:1$Kuox8w2Osgz6Oy7l$89708cb88d3be9a96e82a5335981918db6979c013a3f473329e7921a7cd562a804a6a8684880c028fbc87975a985ea0bd3a2eea86caca9282d4bb2c7d6a01c44"
+    },
+    {
+        "email": "123@456.com",
+        "password": "scrypt:32768:8:1$xEHhYioRNfsCxm1C$c8f603766173cc496c7380051f855e5a0cfa9169ef1bd133128080b531a47ad86a595d3f12ea51db494b421c2f1b1862e06141ecabaeab5fe75e446421eb2857"
+    },
+    {
+        "email": "",
+        "password": "scrypt:32768:8:1$xeQJluKN4tUX3Ry7$0cfa2ef5632179f89e479377175378ccfbba7d8dca94f8f121a620c80a7572a7d7f9f607379b0d4a602ef242cecfb5f9f387722292d04df9f6c881a163668deb"
+    },
+    {
+        "email": "saket.s.atreya@gmail.com",
+        "password": "scrypt:32768:8:1$ZKrJ7HWbSFSD6b5N$10a935faaf736050c6e4b19900c50ffbc5af0ba94c3c25c847d79460af5c1c8c6ef1cf6e23c6e301a0311fcedc6c15e2d32f4ff1518b115020144d1862315dcb"
+    },
+    {
+        "email": "saket.atreya@gmail.com",
+        "password": "scrypt:32768:8:1$xmlMBEaXXy1y9iAO$78d227d760ac293415109138969b61cb7e9b7da2774fc3585ca3370653e083363f00593e381c0b06bf8cfcb5b4be901c50875e62b158963f8f372bcc1850f786"
+    },
+    {
+        "email": "retard@gmail.com",
+        "password": "scrypt:32768:8:1$BnJSAe7DfVuu4PzU$65ba3225f522e285039b71a80ccae46a633e87db59d707f9afc3c1197ffc27edec3f1b0372071c471966cc5dda427276db0cf10695e0a8b0b93a9ec326625009"
+    }
+]
